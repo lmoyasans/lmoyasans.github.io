@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://lucia.com/sitemap.xml
+Sitemap: https://lmoyasans.github.io/sitemap.xml

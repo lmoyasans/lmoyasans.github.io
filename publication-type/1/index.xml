@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 | Lucia Moya-Sans</title>
-    <link>https://lucia.com/publication-type/1/</link>
-      <atom:link href="https://lucia.com/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://lmoyasans.github.io/publication-type/1/</link>
+      <atom:link href="https://lmoyasans.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://lucia.com/media/icon_hu97a109bdf046a68cb86110f2ea848206_1275952_512x512_fill_lanczos_center_3.png</url>
+      <url>https://lmoyasans.github.io/media/icon_hu97a109bdf046a68cb86110f2ea848206_1275952_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
-      <link>https://lucia.com/publication-type/1/</link>
+      <link>https://lmoyasans.github.io/publication-type/1/</link>
     </image>
     
     <item>
       <title>Fourier Transform of Percoll Gradients Boosts CNN Classification of Hereditary Hemolytic Anemias</title>
-      <link>https://lucia.com/publication/percoll-cnn/</link>
+      <link>https://lmoyasans.github.io/publication/percoll-cnn/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://lucia.com/publication/percoll-cnn/</guid>
+      <guid>https://lmoyasans.github.io/publication/percoll-cnn/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
