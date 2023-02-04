@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lucia Moya-Sans</title>
-    <link>http://example.org/</link>
-    <description>Recent content on Lucia Moya-Sans</description>
+    <title>Publications on Lucia Moya-Sans</title>
+    <link>http://example.org/publications/</link>
+    <description>Recent content in Publications on Lucia Moya-Sans</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://example.org/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bioimage model zoo: a community-driven resource for accessible deep learning in bioimage analysis</title>
       <link>http://example.org/publications/biozoo/</link>
@@ -13,15 +13,6 @@
       
       <guid>http://example.org/publications/biozoo/</guid>
       <description>Abstract Deep learning-based approaches are revolutionizing imaging-driven scientific research.However, the accessibility and reproducibility of deep learning-based workflows for imaging scientists remain far from sufficient. Several tools have recently risen to the challenge of democratizing deep learning by providing user-friendly interfaces to analyze new data with pre-trained or fine-tuned models. Still, few of the existing pre-trained models are interoperable between these tools, critically restricting a model’s overall utility and the possibility of validating and reproducing scientific analyses.</description>
-    </item>
-    
-    <item>
-      <title>Experience</title>
-      <link>http://example.org/experience/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/experience/</guid>
-      <description></description>
     </item>
     
     <item>
