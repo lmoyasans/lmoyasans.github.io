@@ -1,9 +1,9 @@
 {
 	"version": 3,
 	"file": "noscript.css",
-	"sourceRoot": "/home/cia/Documentos/hugo-web-template",
+	"sourceRoot": "/Users/mcrespo/Documents/lmoyasans",
 	"sources": [
-		"stdin"
+		"noscript.css"
 	],
 	"sourcesContent": [
 		"@import url(font-awesome.min.css);\n/*\n\tMassively by HTML5 UP\n\thtml5up.net | @ajlkn\n\tFree for personal and commercial use under the CCA 3.0 license (html5up.net/license)\n*/\n/* Wrapper */\n#wrapper {\n  background-image: url(\"../../images/bg.jpg\");\n  background-size: auto,\t\t\t\t\t\t\t\tauto,\t\t\t\t\t\t\t\t\t\t\t\t\t\t100% auto;\n  background-position: center,\t\t\t\t\t\t\t\tcenter,\t\t\t\t\t\t\t\t\t\t\t\t\t\ttop center;\n  background-repeat: repeat,\t\t\t\t\t\t\t\tno-repeat,\t\t\t\t\t\t\t\t\t\t\t\t\tno-repeat;\n  background-attachment: fixed,\t\t\t\t\t\t\t\tfixed,\t\t\t\t\t\t\t\t\t\t\t\t\t\tfixed; }\n  #wrapper.fade-in:before {\n    display: none; }\n\n/* Intro */\nbody.is-preload #intro {\n  opacity: 1; }\n  body.is-preload #intro:not(.hidden) + #header + #nav {\n    -moz-transform: none;\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none;\n    opacity: 1; }\n"

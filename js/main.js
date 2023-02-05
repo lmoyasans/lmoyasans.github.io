@@ -54,7 +54,9 @@
     });
     $(".scrolly").scrolly();
     $wrapper._parallax(0.925);
-    $navPanelToggle = $('<a href="#navPanel" id="navPanelToggle">Menu</a>').appendTo($wrapper);
+    $navPanelToggle = $(
+      '<a href="#navPanel" id="navPanelToggle">Menu</a>'
+    ).appendTo($wrapper);
     $header.scrollex({
       bottom: "5vh",
       enter: function() {
@@ -64,7 +66,9 @@
         $navPanelToggle.addClass("alt");
       }
     });
-    $navPanel = $('<div id="navPanel"><nav></nav><a href="#navPanel" class="close"></a></div>').appendTo($body).panel({
+    $navPanel = $(
+      '<div id="navPanel"><nav></nav><a href="#navPanel" class="close"></a></div>'
+    ).appendTo($body).panel({
       delay: 500,
       hideOnClick: true,
       hideOnSwipe: true,

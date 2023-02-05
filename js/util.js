@@ -6,7 +6,9 @@
       $a = $this.find("a"), b = [];
       $a.each(function() {
         var $this2 = $(this), indent = Math.max(0, $this2.parents("li").length - 1), href = $this2.attr("href"), target = $this2.attr("target");
-        b.push('<a class="link depth-' + indent + '"' + (typeof target !== "undefined" && target != "" ? ' target="' + target + '"' : "") + (typeof href !== "undefined" && href != "" ? ' href="' + href + '"' : "") + '><span class="indent-' + indent + '"></span>' + $this2.text() + "</a>");
+        b.push(
+          '<a class="link depth-' + indent + '"' + (typeof target !== "undefined" && target != "" ? ' target="' + target + '"' : "") + (typeof href !== "undefined" && href != "" ? ' href="' + href + '"' : "") + '><span class="indent-' + indent + '"></span>' + $this2.text() + "</a>"
+        );
       });
       return b.join("");
     };
@@ -20,14 +22,23 @@
       }
       var $this = $(this), $body = $("body"), $window = $(window), id = $this.attr("id"), config;
       config = $.extend({
+        // Delay.
         delay: 0,
+        // Hide panel on link click.
         hideOnClick: false,
+        // Hide panel on escape keypress.
         hideOnEscape: false,
+        // Hide panel on swipe.
         hideOnSwipe: false,
+        // Reset scroll position on hide.
         resetScroll: false,
+        // Reset forms on hide.
         resetForms: false,
+        // Side of viewport the panel will appear.
         side: null,
+        // Target element for "class".
         target: $this,
+        // Class to toggle.
         visibleClass: "visible"
       }, userConfig);
       if (typeof config.target != "jQuery")
@@ -158,7 +169,9 @@
       });
       $this.find("input[type=password]").each(function() {
         var i2 = $(this);
-        var x = $($("<div>").append(i2.clone()).remove().html().replace(/type="password"/i, 'type="text"').replace(/type=password/i, "type=text"));
+        var x = $(
+          $("<div>").append(i2.clone()).remove().html().replace(/type="password"/i, 'type="text"').replace(/type=password/i, "type=text")
+        );
         if (i2.attr("id") != "")
           x.attr("id", i2.attr("id") + "-polyfill-field");
         if (i2.attr("name") != "")
