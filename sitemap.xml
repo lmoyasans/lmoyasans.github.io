@@ -14,6 +14,10 @@
   </url><url>
     <loc>http://example.org/publications/</loc>
   </url><url>
+    <loc>http://example.org/publications/</loc>
+  </url><url>
+    <loc>http://example.org/socialinitiatives/</loc>
+  </url><url>
     <loc>http://example.org/tags/</loc>
   </url>
 </urlset>
