@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bioimage model zoo: a community-driven resource for accessible deep learning in bioimage analysis | Lucia Moya-Sans</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Deep learning-based approaches are revolutionizing imaging-driven scientific research.However, the accessibility and reproducibility of deep learning-based workflows for imaging scientists remain far from sufficient. Several tools have recently risen to the challenge of democratizing deep learning by providing user-friendly interfaces to analyze new data with pre-trained or fine-tuned models. Still, few of the existing pre-trained models are interoperable between these tools, critically restricting a model’s overall utility and the possibility of validating and reproducing scientific analyses. Here, we present the BioImage Model Zoo (https://bioimage.io): a community-driven, fully open resource where standardized pre-trained models can be shared, explored, tested, and downloaded for further adaptation or direct deployment in multiple end user-facing tools (e.g., ilastik, deepImageJ, QuPath, StarDist, ImJoy, ZeroCostDL4Mic, CSBDeep). To enable everyone to contribute and consume the Zoo resources, we provide a model standard to enable cross-compatibility, a rich list of example models and practical use-cases, developer tools, documentation, and the accompanying infrastructure for model upload, download and testing. Our contribution aims to lay the groundwork to make deep learning methods for microscopy imaging findable, accessible, interoperable, and reusable (FAIR) across software tools and platforms">
+    <meta name="generator" content="Hugo 0.110.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+
+<link rel="stylesheet" href="/main.min.css" >
+
+
+
+<noscript><link rel="stylesheet" href="/noscript.min.css" ></noscript>
+
+
+
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    
+    
+    <meta property="og:title" content="Bioimage model zoo: a community-driven resource for accessible deep learning in bioimage analysis" />
+<meta property="og:description" content="Deep learning-based approaches are revolutionizing imaging-driven scientific research.However, the accessibility and reproducibility of deep learning-based workflows for imaging scientists remain far from sufficient. Several tools have recently risen to the challenge of democratizing deep learning by providing user-friendly interfaces to analyze new data with pre-trained or fine-tuned models. Still, few of the existing pre-trained models are interoperable between these tools, critically restricting a model’s overall utility and the possibility of validating and reproducing scientific analyses. Here, we present the BioImage Model Zoo (https://bioimage.io): a community-driven, fully open resource where standardized pre-trained models can be shared, explored, tested, and downloaded for further adaptation or direct deployment in multiple end user-facing tools (e.g., ilastik, deepImageJ, QuPath, StarDist, ImJoy, ZeroCostDL4Mic, CSBDeep). To enable everyone to contribute and consume the Zoo resources, we provide a model standard to enable cross-compatibility, a rich list of example models and practical use-cases, developer tools, documentation, and the accompanying infrastructure for model upload, download and testing. Our contribution aims to lay the groundwork to make deep learning methods for microscopy imaging findable, accessible, interoperable, and reusable (FAIR) across software tools and platforms" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/publications/biozoo/" /><meta property="article:section" content="publications" />
+
+
+<meta itemprop="name" content="Bioimage model zoo: a community-driven resource for accessible deep learning in bioimage analysis">
+<meta itemprop="description" content="Deep learning-based approaches are revolutionizing imaging-driven scientific research.However, the accessibility and reproducibility of deep learning-based workflows for imaging scientists remain far from sufficient. Several tools have recently risen to the challenge of democratizing deep learning by providing user-friendly interfaces to analyze new data with pre-trained or fine-tuned models. Still, few of the existing pre-trained models are interoperable between these tools, critically restricting a model’s overall utility and the possibility of validating and reproducing scientific analyses. Here, we present the BioImage Model Zoo (https://bioimage.io): a community-driven, fully open resource where standardized pre-trained models can be shared, explored, tested, and downloaded for further adaptation or direct deployment in multiple end user-facing tools (e.g., ilastik, deepImageJ, QuPath, StarDist, ImJoy, ZeroCostDL4Mic, CSBDeep). To enable everyone to contribute and consume the Zoo resources, we provide a model standard to enable cross-compatibility, a rich list of example models and practical use-cases, developer tools, documentation, and the accompanying infrastructure for model upload, download and testing. Our contribution aims to lay the groundwork to make deep learning methods for microscopy imaging findable, accessible, interoperable, and reusable (FAIR) across software tools and platforms">
+
+<meta itemprop="wordCount" content="238">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bioimage model zoo: a community-driven resource for accessible deep learning in bioimage analysis"/>
+<meta name="twitter:description" content="Deep learning-based approaches are revolutionizing imaging-driven scientific research.However, the accessibility and reproducibility of deep learning-based workflows for imaging scientists remain far from sufficient. Several tools have recently risen to the challenge of democratizing deep learning by providing user-friendly interfaces to analyze new data with pre-trained or fine-tuned models. Still, few of the existing pre-trained models are interoperable between these tools, critically restricting a model’s overall utility and the possibility of validating and reproducing scientific analyses. Here, we present the BioImage Model Zoo (https://bioimage.io): a community-driven, fully open resource where standardized pre-trained models can be shared, explored, tested, and downloaded for further adaptation or direct deployment in multiple end user-facing tools (e.g., ilastik, deepImageJ, QuPath, StarDist, ImJoy, ZeroCostDL4Mic, CSBDeep). To enable everyone to contribute and consume the Zoo resources, we provide a model standard to enable cross-compatibility, a rich list of example models and practical use-cases, developer tools, documentation, and the accompanying infrastructure for model upload, download and testing. Our contribution aims to lay the groundwork to make deep learning methods for microscopy imaging findable, accessible, interoperable, and reusable (FAIR) across software tools and platforms"/>
+
+
+	
+  </head>
+
+  <body class="is-preload">
+    <div id="wrapper" class="fade-in">
+        
+
+
+<header id="header">
+    <a href="/" class="logo">Lucia Moya-Sans</a>
+</header>
+
+
+<nav id="nav">
+    <ul class="links">
+        
+        
+            
+            
+            
+            
+            
+                
+                
+            
+
+            <li class="">
+                <a href="/#header" title="">  <span>About Me</span></a>
+            </li>
+        
+            
+            
+            
+            
+            
+                
+                
+            
+
+            <li class="">
+                <a href="/publications" title="">  <span>Publications &#43; awards</span></a>
+            </li>
+        
+            
+            
+            
+            
+            
+                
+                
+            
+
+            <li class="">
+                <a href="/experience" title="">  <span>Experience</span></a>
+            </li>
+        
+            
+            
+            
+            
+            
+                
+                
+            
+
+            <li class="">
+                <a href="/socialinitiatives" title="">  <span>Social initiatives</span></a>
+            </li>
+        
+            
+            
+            
+            
+            
+
+            <li class="">
+                <a href="#footer" title="">  <span>Contact</span></a>
+            </li>
+        
+    </ul>
+
+    <ul class="icons">
+        
+            <li><a href="mailto:lmoyasans@gmail.com" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
+
+            <li><a href="https://scholar.google.es/citations?user=u-6GyqwAAAAJ" class="icon academic ai-google-scholar-square"><span class="label">Scholar</span></a></li>
+
+            <li><a href="https://github.com/lmoyasans" class="icon brands fa-github"><span class="label">Github</span></a></li>
+
+            <li><a href="https://www.linkedin.com/in/lucia-maria-moya-sans" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+            <li><a href="https://twitter.com/ciams16" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+    </ul>
+</nav>
+
+
+        <div id="main">
+            
+
+            
+
+
+
+<div class="publication-header">
+    <div class="publication-journal">
+        Preprint version on BioArXiv
+    </div>
+    <div class="publication-title">
+        <h2>Bioimage model zoo: a community-driven resource for accessible deep learning in bioimage analysis</h2>
+    </div>
+    <div class="publication-header-authors">
+        
+        <span> Wei Ouyang * </span>
+        
+        <span> Fynn Beuttenmueller * </span>
+        
+        <span> Estibaliz Gómez-de-Mariscal * </span>
+        
+        <span> Constantin Pape * </span>
+        
+        <span> Tom Burke </span>
+        
+        <span> Carlos Garcia-López-de-Haro </span>
+        
+        <span> Craig Russell </span>
+        
+        <span> Lucía Moya-Sans </span>
+        
+        <span> Cristina de-la-Torre-Gutiérrez </span>
+        
+        <span> Deborah Schmidt </span>
+        
+        <span> Dominik Kutra </span>
+        
+        <span> Maksim Novikov </span>
+        
+        <span> Martin Weigert </span>
+        
+        <span> Uwe Schmidt </span>
+        
+        <span> Peter Bankhead </span>
+        
+        <span> Guillaume Jacquemet </span>
+        
+        <span> Daniel Sage </span>
+        
+        <span> Ricardo Henriques </span>
+        
+        <span> Arrate Muñoz-Barrutia </span>
+        
+        <span> Emma Lundberg </span>
+        
+        <span> Florian Jug </span>
+        
+        <span> Anna Kreshuk </span>
+        
+    </div>
+
+    
+    <div class="publication-teaser">
+        
+        <img src="/images/featured.png" style="max-width: 1904px; max-height: 882px">
+        
+    </div>
+    
+</div>
+
+<div class="publication-body">
+    <h3>Resources</h3>
+    <div class="publication-buttons">
+        
+        <a href="https://www.biorxiv.org/content/biorxiv/early/2022/06/08/2022.06.07.495102.full.pdf" class="button small icon solid fa-file-pdf"> PDF </a>
+        
+        <a href="#citation" class="button small icon solid fa-quote-right"> Cite </a>
+        
+        
+    </div>
+    <h3 id="abstract">Abstract</h3>
+<p>Deep learning-based approaches are revolutionizing imaging-driven scientific research.However, the accessibility and reproducibility of deep learning-based workflows for imaging scientists remain far from sufficient. Several tools have recently risen to the challenge of democratizing deep learning by providing user-friendly interfaces to analyze new data with pre-trained or fine-tuned models. Still, few of the existing pre-trained models are interoperable between these tools, critically restricting a model’s overall utility and the possibility of validating and reproducing scientific analyses. Here, we present the BioImage Model Zoo (<a href="https://bioimage.io">https://bioimage.io</a>): a community-driven, fully open resource where standardized pre-trained models can be shared, explored, tested, and downloaded for further adaptation or direct deployment in multiple end user-facing tools (e.g., ilastik, deepImageJ, QuPath, StarDist, ImJoy, ZeroCostDL4Mic, CSBDeep). To enable everyone to contribute and consume the Zoo resources, we provide a model standard to enable cross-compatibility, a rich list of example models and practical use-cases, developer tools, documentation, and the accompanying infrastructure for model upload, download and testing. Our contribution aims to lay the groundwork to make deep learning methods for microscopy imaging findable, accessible, interoperable, and reusable (FAIR) across software tools and platforms.</p>
+<h3 id="citation">Citation</h3>
+<pre tabindex="0"><code>@article{ouyang2022bioimage,
+  title={BioImage Model Zoo: A Community-Driven Resource for Accessible Deep Learning in BioImage Analysis},
+  author={Ouyang, Wei and Beuttenmueller, Fynn and G{\&#39;o}mez-de-Mariscal, Estibaliz and Pape, Constantin and Burke, Tom and Garcia-L{\&#39;o}pez-de-Haro, Carlos and Russell, Craig and Moya-Sans, Luc{\&#39;\i}a and de-la-Torre-Guti{\&#39;e}rrez, Cristina and Schmidt, Deborah and others},
+  journal={bioRxiv},
+  year={2022},
+  publisher={Cold Spring Harbor Laboratory}
+}
+</code></pre>
+</div>
+
+
+        </div>
+
+        <footer class="footer" id="footer">
+    <section class="split contact">
+        <section>
+            <h3>Email</h3>
+            <p><a href="mailto:lmoyasans@gmail.com">lmoyasans@gmail.com</a></p>
+            <br>
+        </section>
+        <section class="alt">
+            <h3>Address</h3>
+            <p> Zeughaustrasse 43, Zurich, Switzerland CH-8004
+ </p>
+        </section>
+    </section>
+    <section class="split contact">
+        <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+                
+            <li><a href="mailto:lmoyasans@gmail.com" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
+
+            <li><a href="https://scholar.google.es/citations?user=u-6GyqwAAAAJ" class="icon academic ai-google-scholar-square"><span class="label">Scholar</span></a></li>
+
+            <li><a href="https://github.com/lmoyasans" class="icon brands fa-github"><span class="label">Github</span></a></li>
+
+            <li><a href="https://www.linkedin.com/in/lucia-maria-moya-sans" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+            <li><a href="https://twitter.com/ciams16" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+            </ul>
+        </section>
+        <section class="alt">
+            <h3></h3>
+            <p>
+            
+                
+                    <a href="/pdf/CVLuciaMoyaSans.pdf" class="button icon solid fa-download"> Download CV in PDF </a>
+                
+            
+            </p>
+        </section>
+    </section>
+</footer>
+
+
+        <div id="copyright">
+            <ul>
+              <li>&copy; Lucía Moya-Sans 2024</li>
+              <li>Adapted from <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+
+
+
+    <script src="/js/jquery.min.js"></script>
+
+
+
+    <script src="/js/jquery.scrollex.min.js"></script>
+
+
+
+    <script src="/js/jquery.scrolly.min.js"></script>
+
+
+
+    <script src="/js/browser.min.js"></script>
+
+
+
+    <script src="/js/breakpoints.min.js"></script>
+
+
+
+
+
+    
+    <script src="/js/util.js"></script>
+    
+
+
+
+    
+    <script src="/js/main.js"></script>
+    
+
+
+
+
+
+  </body>
+</html>

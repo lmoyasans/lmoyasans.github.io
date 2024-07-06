@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About me on Lucia Moya-Sans</title>
+    <link>http://example.org/</link>
+    <description>Recent content in About me on Lucia Moya-Sans</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bioimage model zoo: a community-driven resource for accessible deep learning in bioimage analysis</title>
+      <link>http://example.org/publications/biozoo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/publications/biozoo/</guid>
+      <description>Abstract Deep learning-based approaches are revolutionizing imaging-driven scientific research.However, the accessibility and reproducibility of deep learning-based workflows for imaging scientists remain far from sufficient. Several tools have recently risen to the challenge of democratizing deep learning by providing user-friendly interfaces to analyze new data with pre-trained or fine-tuned models. Still, few of the existing pre-trained models are interoperable between these tools, critically restricting a model’s overall utility and the possibility of validating and reproducing scientific analyses.</description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>http://example.org/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fourier Transform of Percoll Gradients Boosts CNN Classification of Hereditary Hemolytic Anemias</title>
+      <link>http://example.org/publications/percoll-fourier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/publications/percoll-fourier/</guid>
+      <description>Abstract Hereditary hemolytic anemias are genetic disorders that affect the shape and density of red blood cells. Genetic tests currently used to diagnose such anemias are expensive and unavailable in the majority of clinical labs. Here, we propose a method for identifying hereditary hemolytic anemias based on a standard biochemistry method, called Percoll gradient, obtained by centrifuging a patient’s blood. Our hybrid approach consists on using spatial data-driven features, extracted with a convolutional neural network and spectral handcrafted features obtained from fast Fourier transform.</description>
+    </item>
+    
+    <item>
+      <title>Publications &#43; Awards</title>
+      <link>http://example.org/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social initiatives</title>
+      <link>http://example.org/socialinitiatives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/socialinitiatives/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
